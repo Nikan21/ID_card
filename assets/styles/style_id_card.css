@@ -3,7 +3,7 @@
 }
 
 body{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin: 0%;
 }
@@ -11,11 +11,14 @@ body{
 .card .head, .centre, .footer{
     width: 30vw;
     margin-left: 35%;
+    min-width: 30vw;
 }
 
+.head, .footer{
+    background-color: #17a2b8;
+}
 
 .head{
-    background-color: blue;
     height: 20vh;
     margin-top: 2%;
 }
@@ -23,53 +26,61 @@ body{
 .centre{
     background-color: white;
     height: 40vh;
-    border: 1px solid lightblue;
+    border: 1px solid #138496;
 }
 
 .footer{
-    background-color: blue;
     height: 10vh;
 }
 
 .avatar{
-    display: inline-block;
+    display: block;
     width: 150px;
     height: 150px;
     border: 5px solid red;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 36%;
-    margin-top: -70px;
+    margin: -70px auto 20px;
 }
 
 .name{
+    display: block;
     text-align: center;
     font-size: 20px;
-    margin: 10px;
+    margin: 10px auto;
+}
+
+.but{
+    text-align: center;
+    margin: auto auto;
 }
 
 .follow{
-    background-color: green;
-    margin: 20px 10px 20px 180px;
+    background-color: #28a745;
+    border-color: #28a745;
 }
 
 .send{
-    background-color: lightblue;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
 }
 
 .allbut{
     display: inline-block;
-    border-color: white;
-    margin-bottom: 40px;    
+    color: white;
+    padding: 5px 5px;
+    margin: 20px auto;
 }
 
 .icon{
     display: inline-block;
+    width: 35px;
+    height: 35px;
     margin-top: 5%;
 }
 
 .facebook{
-    margin-left: 40%;
+    margin-left: 36%;
 
 }
 
